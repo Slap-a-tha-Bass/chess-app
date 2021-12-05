@@ -8,6 +8,7 @@ import {
   Number,
 } from "../styles/BoardStyles";
 import Bishop from "./Bishop";
+import King from "./King";
 import Pawn from "./Pawn";
 
 const Board = () => {
@@ -31,7 +32,9 @@ const Board = () => {
             <Bishop bishopColor="black" faceColor="white" stripeColor="white" borderColor="rgb(200,200,200)"/>
           </BoardSquare>
           <BoardSquare bgcolor="rgb(75,75,75)" />
-          <BoardSquare bgcolor="white" />
+          <BoardSquare bgcolor="white">
+            <King kingColor="black" stripeColor="white" borderColor="white"/>
+          </BoardSquare>
           <BoardSquare bgcolor="rgb(75,75,75)">
             <Bishop bishopColor="black" faceColor="white" stripeColor="white" borderColor="rgb(200,200,200)"/>
           </BoardSquare>
@@ -137,7 +140,9 @@ const Board = () => {
             <Bishop bishopColor="rgb(200,200,200)" faceColor="rgb(75,75,75)" stripeColor="rgb(75,75,75)"  borderColor="black" />
           </BoardSquare>
           <BoardSquare bgcolor="white" />
-          <BoardSquare bgcolor="rgb(75,75,75)" />
+          <BoardSquare bgcolor="rgb(75,75,75)">
+            <King kingColor="rgb(200,200,200)" stripeColor="rgb(75,75,75)" borderColor="black"/>
+          </BoardSquare>
           <BoardSquare bgcolor="white">
             <Bishop bishopColor="rgb(200,200,200)" faceColor="rgb(75,75,75)" stripeColor="rgb(75,75,75)" borderColor="black"/>
           </BoardSquare>

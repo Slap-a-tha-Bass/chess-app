@@ -150,3 +150,90 @@ export const BishopRobesRight = styled.div`
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
+export const KingHeadLeft = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 2.5rem;
+  width: 2rem;
+  transform: rotate(-20deg);
+  border-left: 1px solid ${props => props.borderColor || 'red'};
+  border-right: 1px solid ${props => props.borderColor || 'red'};
+  border-bottom: 1px solid ${props => props.borderColor || 'red'};
+  border-radius: 50%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KingHeadRight = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 2.5rem;
+  width: 2rem;
+  transform: rotate(20deg);
+  border-left: 1px solid ${props => props.borderColor || 'red'};
+  border-right: 1px solid ${props => props.borderColor || 'red'};
+  border-bottom: 1px solid ${props => props.borderColor || 'red'};
+  border-radius: 50%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KingHeadMiddle = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 3rem;
+  width: 1.5rem;
+  border-left: 1px solid ${props => props.borderColor || 'red'};
+  border-right: 1px solid ${props => props.borderColor || 'red'};
+  border-bottom: 1px solid ${props => props.borderColor || 'red'};
+  border-radius: 50%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KingCross1 = styled.div`
+  background-color: ${(props) => props.bgcolor || "red"};
+  position: absolute;
+  width: 0.2rem;
+  height: 1.2rem;
+  border-radius: 40%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KingCross2 = styled.div`
+  background-color: ${(props) => props.bgcolor || "red"};
+  position: absolute;
+  width: 1.2rem;
+  height: 0.2rem;
+  border-radius: 40%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KingBottom = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 1.5rem;
+  width: 3rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 50%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KingStripeTop = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 0.2rem;
+  width: 1.5rem;
+  border-radius: 25%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KingStripeBottom = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 0.2rem;
+  width: 2rem;
+  border-radius: 25%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+
