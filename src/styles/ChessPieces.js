@@ -156,9 +156,9 @@ export const KingHeadLeft = styled.div`
   height: 2.5rem;
   width: 2rem;
   transform: rotate(-20deg);
-  border-left: 1px solid ${props => props.borderColor || 'red'};
-  border-right: 1px solid ${props => props.borderColor || 'red'};
-  border-bottom: 1px solid ${props => props.borderColor || 'red'};
+  border-left: 1px solid ${(props) => props.borderColor || "red"};
+  border-right: 1px solid ${(props) => props.borderColor || "red"};
+  border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
@@ -169,9 +169,9 @@ export const KingHeadRight = styled.div`
   height: 2.5rem;
   width: 2rem;
   transform: rotate(20deg);
-  border-left: 1px solid ${props => props.borderColor || 'red'};
-  border-right: 1px solid ${props => props.borderColor || 'red'};
-  border-bottom: 1px solid ${props => props.borderColor || 'red'};
+  border-left: 1px solid ${(props) => props.borderColor || "red"};
+  border-right: 1px solid ${(props) => props.borderColor || "red"};
+  border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
@@ -181,9 +181,9 @@ export const KingHeadMiddle = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
   height: 3rem;
   width: 1.5rem;
-  border-left: 1px solid ${props => props.borderColor || 'red'};
-  border-right: 1px solid ${props => props.borderColor || 'red'};
-  border-bottom: 1px solid ${props => props.borderColor || 'red'};
+  border-left: 1px solid ${(props) => props.borderColor || "red"};
+  border-right: 1px solid ${(props) => props.borderColor || "red"};
+  border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
@@ -236,4 +236,110 @@ export const KingStripeBottom = styled.div`
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
-
+export const QueenFarLeftTriangle = styled.div`
+  position: absolute;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  transform: rotate(-18deg);
+  border-bottom: 4rem solid ${(props) => props.bgcolor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenFarLeftTriangleBehind = styled.div`
+  position: absolute;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  transform: rotate(-18deg);
+  border-bottom: 4rem solid ${(props) => props.borderColor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenMiddleLeftTriangle = styled.div`
+  position: absolute;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  transform: rotate(-9deg);
+  border-bottom: 4rem solid ${(props) => props.bgcolor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenMiddleLeftTriangleBehind = styled.div`
+  position: absolute;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  transform: rotate(-9deg);
+  border-bottom: 4rem solid ${(props) => props.borderColor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenFarRightTriangle = styled.div`
+  position: absolute;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  transform: rotate(18deg);
+  border-bottom: 4rem solid ${(props) => props.bgcolor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenFarRightTriangleBehind = styled.div`
+  position: absolute;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  transform: rotate(18deg);
+  border-bottom: 4rem solid ${(props) => props.borderColor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenMiddleRightTriangle = styled.div`
+  position: absolute;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  transform: rotate(9deg);
+  border-bottom: 4rem solid ${(props) => props.bgcolor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenMiddleRightTriangleBehind = styled.div`
+  position: absolute;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  transform: rotate(9deg);
+  border-bottom: 4rem solid ${(props) => props.borderColor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenMiddleTriangle = styled.div`
+  position: absolute;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 4rem solid ${(props) => props.bgcolor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenMiddleTriangleBehind = styled.div`
+  position: absolute;
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  border-bottom: 4rem solid ${(props) => props.borderColor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenBottom = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  border: 1px solid ${(props) => props.borderColor || "red"};
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const QueenStripeBottom = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 0.2rem;
+  width: 2rem;
+  border-radius: 25%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;

@@ -10,6 +10,7 @@ import {
 import Bishop from "./Bishop";
 import King from "./King";
 import Pawn from "./Pawn";
+import Queen from "./Queen";
 
 const Board = () => {
   return (
@@ -31,7 +32,9 @@ const Board = () => {
           <BoardSquare bgcolor="white">
             <Bishop bishopColor="black" faceColor="white" stripeColor="white" borderColor="rgb(200,200,200)"/>
           </BoardSquare>
-          <BoardSquare bgcolor="rgb(75,75,75)" />
+          <BoardSquare bgcolor="rgb(75,75,75)">
+            <Queen queenColor="black" stripeColor="white" borderColor="rgb(200,200,200)"/>
+          </BoardSquare>
           <BoardSquare bgcolor="white">
             <King kingColor="black" stripeColor="white" borderColor="white"/>
           </BoardSquare>
@@ -109,42 +112,44 @@ const Board = () => {
         </BoardRow>
         <BoardRow>
           <BoardSquare bgcolor="white">
-            <Pawn pawnColor="rgb(200,200,200)" stripeColor="black"/>
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black"/>
           </BoardSquare>
           <BoardSquare bgcolor="rgb(75,75,75)">
-            <Pawn pawnColor="rgb(200,200,200)" stripeColor="black"/>
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black"/>
           </BoardSquare>
           <BoardSquare bgcolor="white">
-            <Pawn pawnColor="rgb(200,200,200)" stripeColor="black"/>
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black"/>
           </BoardSquare>
           <BoardSquare bgcolor="rgb(75,75,75)">
-            <Pawn pawnColor="rgb(200,200,200)" stripeColor="black"/>
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black"/>
           </BoardSquare>
           <BoardSquare bgcolor="white">
-            <Pawn pawnColor="rgb(200,200,200)" stripeColor="black"/>
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black"/>
           </BoardSquare>
           <BoardSquare bgcolor="rgb(75,75,75)">
-            <Pawn pawnColor="rgb(200,200,200)" stripeColor="black"/>
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black"/>
           </BoardSquare>
           <BoardSquare bgcolor="white">
-            <Pawn pawnColor="rgb(200,200,200)" stripeColor="black"/>
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black"/>
           </BoardSquare>
           <BoardSquare bgcolor="rgb(75,75,75)">
-            <Pawn pawnColor="rgb(200,200,200)" stripeColor="black"/>
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black"/>
           </BoardSquare>
         </BoardRow>
         <BoardRow>
           <BoardSquare bgcolor="rgb(75,75,75)" />
           <BoardSquare bgcolor="white" />
           <BoardSquare bgcolor="rgb(75,75,75)">
-            <Bishop bishopColor="rgb(200,200,200)" faceColor="rgb(75,75,75)" stripeColor="rgb(75,75,75)"  borderColor="black" />
-          </BoardSquare>
-          <BoardSquare bgcolor="white" />
-          <BoardSquare bgcolor="rgb(75,75,75)">
-            <King kingColor="rgb(200,200,200)" stripeColor="rgb(75,75,75)" borderColor="black"/>
+            <Bishop bishopColor="rgb(180,180,180)" faceColor="rgb(75,75,75)" stripeColor="rgb(75,75,75)"  borderColor="black" />
           </BoardSquare>
           <BoardSquare bgcolor="white">
-            <Bishop bishopColor="rgb(200,200,200)" faceColor="rgb(75,75,75)" stripeColor="rgb(75,75,75)" borderColor="black"/>
+              <Queen queenColor="rgb(180,180,180)" stripeColor="rgb(75,75,75)" borderColor="rgb(75,75,75)" />
+          </BoardSquare>
+          <BoardSquare bgcolor="rgb(75,75,75)">
+            <King kingColor="rgb(180,180,180)" stripeColor="rgb(75,75,75)" borderColor="black"/>
+          </BoardSquare>
+          <BoardSquare bgcolor="white">
+            <Bishop bishopColor="rgb(180,180,180)" faceColor="rgb(75,75,75)" stripeColor="rgb(75,75,75)" borderColor="black"/>
           </BoardSquare>
           <BoardSquare bgcolor="rgb(75,75,75)" />
           <BoardSquare bgcolor="white" />
