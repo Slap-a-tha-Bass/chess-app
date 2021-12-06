@@ -38,9 +38,9 @@ export const PawnBottom = styled.div`
 export const PawnStripe = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
-  height: 0.1rem;
   width: 2rem;
-  border-radius: 25%;
+  border-radius: 10%;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
@@ -81,9 +81,9 @@ export const BishopBody = styled.div`
 export const BishopCross1 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
   position: absolute;
-  width: 0.2rem;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
   height: 1.2rem;
-  border-radius: 40%;
+  border-radius: 20%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
@@ -91,8 +91,8 @@ export const BishopCross2 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
   position: absolute;
   width: 1.2rem;
-  height: 0.2rem;
-  border-radius: 40%;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
+  border-radius: 20%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
@@ -111,18 +111,18 @@ export const BishopBottom = styled.div`
 export const BishopStripeBottom = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
-  height: 0.2rem;
   width: 1.6rem;
-  border-radius: 25%;
+  border-radius: 10%;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
 export const BishopStripeTop = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
-  height: 0.2rem;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
   width: 1rem;
-  border-radius: 25%;
+  border-radius: 10%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
@@ -191,9 +191,9 @@ export const KingHeadMiddle = styled.div`
 export const KingCross1 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
   position: absolute;
-  width: 0.2rem;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
   height: 1.2rem;
-  border-radius: 40%;
+  border-radius: 20%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
@@ -201,8 +201,8 @@ export const KingCross2 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
   position: absolute;
   width: 1.2rem;
-  height: 0.2rem;
-  border-radius: 40%;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
+  border-radius: 20%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
@@ -221,18 +221,18 @@ export const KingBottom = styled.div`
 export const KingStripeTop = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
-  height: 0.2rem;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
   width: 1.5rem;
-  border-radius: 25%;
+  border-radius: 10%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
 export const KingStripeBottom = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
-  height: 0.2rem;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
   width: 2rem;
-  border-radius: 25%;
+  border-radius: 10%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
@@ -337,9 +337,157 @@ export const QueenBottom = styled.div`
 export const QueenStripeBottom = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
-  height: 0.2rem;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
+  width: 2rem;
+  border-radius: 10%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightBody = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  transform: translate(-50%, -50%);
+  height: 2rem;
+  width: 2.5rem;
+  border-radius: 3rem 3rem 0 0;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightBottom = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 20%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightBack = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  transform: translate(-50%, -50%);
+  height: 3.5rem;
+  width: 2rem;
+  border-radius: 0 3rem 1rem 0;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightHead = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 3.5rem;
+  width: 1.5rem;
+  transform: rotate(45deg);
+  border-radius: 50%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightHead2 = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 3rem;
+  width: 1.5rem;
+  transform: rotate(35deg);
+  border-radius: 50%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightEyes = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 0.5rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightNose = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 0.3rem;
+  width: 0.3rem;
+  border-radius: 50%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightEarRight = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 0.5rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightBackStripe = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 3rem;
+  width: 1.5rem;
+  border-radius: 0 3rem 1rem 0;
+  border-right: 0.3rem solid ${(props) => props.borderColor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const KnightStripe = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
   width: 2rem;
   border-radius: 25%;
+  border: 1px solid ${(props) => props.bgcolor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const RookBottom = styled.div`
+  position: absolute;
+  width: 2rem;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1.5rem solid ${(props) => props.bgcolor || "red"};
+  border-radius: 25%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const RookBottomBehind = styled.div`
+  position: absolute;
+  width: 2.25rem;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+  border-bottom: 1.75rem solid ${(props) => props.borderColor || "red"};
+  border-radius: 25%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const RookMiddle = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.bgcolor || "red"};
+  height: 3rem;
+  width: 1.5rem;
+  border-radius: 20%;
+  border-radius: 25%;
+  border: 1px solid ${(props) => props.borderColor || "red"};
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const RookTop = styled.div`
+  position: absolute;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid ${(props) => props.bgcolor || "red"};
+  width: 2rem;
+  border-radius: 25%;
+  margin-left: ${(props) => props.marginLeft || 0}rem;
+  margin-top: ${(props) => props.marginTop || 0}rem;
+`;
+export const RookTopBehind = styled.div`
+  position: absolute;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+  border-top: 1.75rem solid ${(props) => props.borderColor || "red"};
+  border-radius: 25%;
+  width: 2.25rem;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;

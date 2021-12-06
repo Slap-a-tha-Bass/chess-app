@@ -7,8 +7,8 @@ const Bishop = ({bishopColor, faceColor, stripeColor, borderColor}) => {
             <BishopHat bgcolor={bishopColor} marginTop="0.5" />
             <BishopTop bgcolor={bishopColor} marginTop="0.7" />
             <BishopBody bgcolor={bishopColor} marginTop="1.7" />
-            <BishopCross1 bgcolor={faceColor} marginLeft="0.1" marginTop="1.6"/>
-            <BishopCross2 bgcolor={faceColor} marginLeft="0.1" marginTop="2"/>
+            <BishopCross1 bgcolor={faceColor}  marginTop="1.6"/>
+            <BishopCross2 bgcolor={faceColor}  marginTop="2"/>
             <BishopBottom bgcolor={bishopColor} marginTop="3.5" />
             <BishopStripeTop bgcolor={stripeColor} marginTop="3.5"/>
             <BishopStripeBottom bgcolor={stripeColor} marginTop="4"/>
