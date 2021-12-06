@@ -11,8 +11,8 @@ export const BoardRow = styled.div`
 `;
 export const BoardSquare = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
-  width: calc(4.5rem + 2vw);
-  height: calc(4.5rem + 2vw);
+  width: calc(4.75rem + 2vw);
+  height: calc(4.75rem + 2vw);
   border: 1px solid black;
   &:hover {
     cursor: pointer;
