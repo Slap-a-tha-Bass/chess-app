@@ -7,6 +7,8 @@ import Notes from "./components/Notes";
 import Openings from "./components/Openings";
 
 const App = () => {
+  console.log('%c Used all styled components for this project...hope you like it!', 'border: 1px solid white; padding: 10px; border-radius: 5px; color: white; background-color: rgb(60,60,60); font-size: 20px; font-family: monospace');
+  console.log('%c corey@deloach.dev', 'border: 1px solid white; padding: 10px; border-radius: 5px; color: white; background-color: rgb(60,60,60); font-size: 20px; font-family: monospace');
   return (
     <>
       <Board />
