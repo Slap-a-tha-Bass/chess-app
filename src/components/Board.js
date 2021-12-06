@@ -30,7 +30,7 @@ const Board = () => {
       <BoardContainer>
         <BoardRow>
           <BoardSquare bgcolor="white">
-            <Rook rookColor="black" borderColor="rgb(200,200,200)"/>
+            <Rook rookColor="black" borderColor="rgb(200,200,200)" />
           </BoardSquare>
           <BoardSquare bgcolor="rgb(75,75,75)">
             <Knight knightColor="black" faceColor="white" stripeColor="white" />
@@ -209,7 +209,7 @@ const Board = () => {
             />
           </BoardSquare>
           <BoardSquare bgcolor="white">
-          <Rook rookColor="rgb(180,180,180)" borderColor="black" />
+            <Rook rookColor="rgb(180,180,180)" borderColor="black" />
           </BoardSquare>
         </BoardRow>
         <BoardRow>

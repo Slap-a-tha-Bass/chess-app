@@ -83,7 +83,7 @@ export const BishopCross1 = styled.div`
   position: absolute;
   border: 1px solid ${(props) => props.bgcolor || "red"};
   height: 1.2rem;
-  border-radius: 20%;
+  border-radius: 10%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;
@@ -92,7 +92,7 @@ export const BishopCross2 = styled.div`
   position: absolute;
   width: 1.2rem;
   border: 1px solid ${(props) => props.bgcolor || "red"};
-  border-radius: 20%;
+  border-radius: 10%;
   margin-left: ${(props) => props.marginLeft || 0}rem;
   margin-top: ${(props) => props.marginTop || 0}rem;
 `;

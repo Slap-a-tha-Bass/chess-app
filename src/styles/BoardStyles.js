@@ -14,6 +14,10 @@ export const BoardSquare = styled.div`
   width: calc(4.5rem + 2vw);
   height: calc(4.5rem + 2vw);
   border: 1px solid black;
+  &:hover {
+    cursor: pointer;
+    background-color: ${(props) => props.hoverColor || "lightblue"};
+  }
 `;
 export const Letter = styled.span`
   font-size: 2rem;
