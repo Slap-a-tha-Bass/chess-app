@@ -432,10 +432,10 @@ export const KnightStripe = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
   width: 2rem;
-  border-radius: 25%;
+  border-radius: 10%;
   border: 1px solid ${(props) => props.bgcolor || "red"};
-  margin-left: ${(props) => props.marginLeft || 0}rem;
-  margin-top: ${(props) => props.marginTop || 0}rem;
+  margin-left: 0;
+  margin-top: calc(3rem + 1vw);
 `;
 export const RookBottom = styled.div`
   position: absolute;
@@ -450,12 +450,12 @@ export const RookBottom = styled.div`
 export const RookBottomBehind = styled.div`
   position: absolute;
   width: calc(1.25rem + 1vw);
-  border-left: calc(0.5rem + 0.5vw) solid transparent;
-  border-right: calc(0.5rem + 0.5vw) solid transparent;
-  border-bottom: calc(1.5rem + 0.5vw) solid ${(props) => props.borderColor || "red"};
+  border-left: calc(0.5rem + 0.25vw) solid transparent;
+  border-right: calc(0.5rem + 0.25vw) solid transparent;
+  border-bottom: calc(1.5rem + 0.25vw) solid ${(props) => props.borderColor || "red"};
   border-radius: 15%;
   margin-left: 0;
-  margin-top: calc(2.75rem + 1vw);
+  margin-top: calc(2.85rem + 1vw);
 `;
 export const RookMiddle = styled.div`
   position: absolute;
@@ -481,8 +481,8 @@ export const RookTop = styled.div`
 export const RookTopBehind = styled.div`
   position: absolute;
   width: calc(1.25rem + 1vw);
-  border-left: calc(0.5rem + 0.5vw) solid transparent;
-  border-right: calc(0.5rem + 0.5vw) solid transparent;
+  border-left: calc(0.5rem + 0.25vw) solid transparent;
+  border-right: calc(0.5rem + 0.25vw) solid transparent;
   border-top: calc(1.5rem + 0.5vw) solid ${(props) => props.borderColor || "red"};
   border-radius: 15%;
   margin-left: 0;
