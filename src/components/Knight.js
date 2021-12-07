@@ -8,7 +8,6 @@ import {
   KnightEarRight,
   KnightEyes,
   KnightHead,
-  KnightHead2,
   KnightNose,
   KnightStripe,
 } from "../styles/ChessPieces";
@@ -17,7 +16,6 @@ const Knight = ({ knightColor, faceColor, stripeColor }) => {
   return (
     <CenterChessPiece>
       <KnightHead bgcolor={knightColor} marginTop="0.5" marginLeft="-2" />
-      <KnightHead2 bgcolor={knightColor} marginTop="0.5" marginLeft="-2" />
       <KnightEyes bgcolor={faceColor} marginTop="1.5" marginLeft="-2" />
       <KnightNose bgcolor={faceColor} marginTop="2.7" marginLeft="-3.7" />
       <KnightEarRight

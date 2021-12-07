@@ -5,16 +5,17 @@ import {
   PawnBottom,
   PawnHead,
   PawnStripe,
+  PawnStripe2
 } from "../styles/ChessPieces";
 
 const Pawn = ({ pawnColor, stripeColor }) => {
   return (
     <CenterChessPiece>
-      <PawnHead bgcolor={pawnColor} marginTop="1.5" />
-      <PawnBody bgcolor={pawnColor} marginTop="2.3" />
-      <PawnBottom bgcolor={pawnColor} marginLeft="2.8" marginTop="4.5" />
-      <PawnStripe bgcolor={stripeColor} marginTop="4.8" />
-      <PawnStripe bgcolor={stripeColor} marginTop="5.1" />
+      <PawnHead bgcolor={pawnColor} />
+      <PawnBody bgcolor={pawnColor} />
+      <PawnBottom bgcolor={pawnColor} />
+      <PawnStripe bgcolor={stripeColor} />
+      <PawnStripe2 bgcolor={stripeColor} />
     </CenterChessPiece>
   );
 };

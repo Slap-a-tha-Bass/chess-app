@@ -14,28 +14,14 @@ import {
 const King = ({ kingColor, stripeColor, borderColor }) => {
   return (
     <CenterChessPiece>
-      <KingHeadLeft
-        bgcolor={kingColor}
-        borderColor={borderColor}
-        marginTop="2"
-        marginLeft="-3"
-      />
-      <KingHeadRight
-        bgcolor={kingColor}
-        borderColor={borderColor}
-        marginTop="2"
-        marginLeft="3"
-      />
-      <KingHeadMiddle
-        bgcolor={kingColor}
-        borderColor={borderColor}
-        marginTop="1.5"
-      />
-      <KingCross1 bgcolor={kingColor} marginTop="0.6" />
-      <KingCross2 bgcolor={kingColor} marginTop="1" />
-      <KingBottom bgcolor={kingColor} borderColor={borderColor} marginTop="4" />
-      <KingStripeTop bgcolor={stripeColor} marginTop="4.3" />
-      <KingStripeBottom bgcolor={stripeColor} marginTop="4.8" />
+      <KingHeadLeft bgcolor={kingColor} borderColor={borderColor} />
+      <KingHeadRight bgcolor={kingColor} borderColor={borderColor} />
+      <KingHeadMiddle bgcolor={kingColor} borderColor={borderColor} />
+      <KingCross1 bgcolor={kingColor} />
+      <KingCross2 bgcolor={kingColor} />
+      <KingBottom bgcolor={kingColor} borderColor={borderColor} />
+      <KingStripeTop bgcolor={stripeColor} />
+      <KingStripeBottom bgcolor={stripeColor} />
     </CenterChessPiece>
   );
 };
