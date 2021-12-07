@@ -11,11 +11,11 @@ import {
 const Rook = ({ rookColor, borderColor }) => {
   return (
     <CenterChessPiece>
-      <RookMiddle bgcolor={rookColor} marginTop="2" borderColor={borderColor} />
-      <RookBottomBehind borderColor={borderColor} marginTop="4.15" />
-      <RookBottom bgcolor={rookColor} marginTop="4.25" />
-      <RookTopBehind borderColor={borderColor} marginTop="0.9" />
-      <RookTop bgcolor={rookColor} marginTop="1" />
+      <RookMiddle bgcolor={rookColor} borderColor={borderColor} />
+      <RookBottomBehind borderColor={borderColor} />
+      <RookBottom bgcolor={rookColor} />
+      <RookTopBehind borderColor={borderColor} />
+      <RookTop bgcolor={rookColor} />
     </CenterChessPiece>
   );
 };
