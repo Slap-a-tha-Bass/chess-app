@@ -440,8 +440,8 @@ export const KnightStripe = styled.div`
 export const RookBottom = styled.div`
   position: absolute;
   width: calc(1rem + 1vw);
-  border-left: calc(0.25rem + 0.25vw) solid transparent;
-  border-right: calc(0.25rem + 0.25vw) solid transparent;
+  border-left: calc(0.25rem + 0.5vw) solid transparent;
+  border-right: calc(0.25rem + 0.5vw) solid transparent;
   border-bottom: calc(1rem + 0.5vw) solid ${(props) => props.bgcolor || "red"};
   border-radius: 15%;
   margin-left: 0;
@@ -471,8 +471,8 @@ export const RookMiddle = styled.div`
 export const RookTop = styled.div`
   position: absolute;
   width: calc(1rem + 1vw);
-  border-left: calc(0.25rem + 0.25vw) solid transparent;
-  border-right: calc(0.25rem + 0.25vw) solid transparent;
+  border-left: calc(0.25rem + 0.5vw) solid transparent;
+  border-right: calc(0.25rem + 0.5vw) solid transparent;
   border-top: calc(1rem + 0.5vw) solid ${(props) => props.bgcolor || "red"};
   border-radius: 15%;
   margin-left: 0;
