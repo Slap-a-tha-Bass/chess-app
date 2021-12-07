@@ -4,37 +4,33 @@ export const BoardContainer = styled.div`
   position: absolute;
   width: 100vmax;
   height: 100vmax;
-  margin-left: 3rem;
+  padding-top: calc(1rem + 1vw);
 `;
 export const BoardRow = styled.div`
   display: flex;
 `;
 export const BoardSquare = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
-  width: calc(4.5rem + 2vw);
-  height: calc(4.5rem + 2vw);
+  width: calc(2.5rem + 2vw);
+  height: calc(2.5rem + 2vw);
   border: 1px solid black;
+  padding: calc(0.5rem + 0.5vw);
   &:hover {
     cursor: pointer;
     background-color: ${(props) => props.hoverColor || "lightblue"};
   }
 `;
+export const LetterSquare = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: calc(2.5rem + 2vw);
+  height: calc(2.5rem + 2vw);
+  padding: calc(0.5rem + 0.5vw);
+`;
 export const Letter = styled.span`
   font-size: 2rem;
-  margin-left: ${(props) => props.marginLeft || 0}rem;
   font-weight: 300;
-  color: white;
-`;
-export const NumberDivVert = styled.div`
-  position: absolute;
-  width: 3rem;
-  height: 53.5vmax;
-`;
-export const Number = styled.span`
-  display: block;
-  font-size: 2rem;
-  font-weight: 300;
-  margin-left: 1rem;
-  margin-top: ${(props) => props.marginTop || 0}rem;
   color: white;
 `;

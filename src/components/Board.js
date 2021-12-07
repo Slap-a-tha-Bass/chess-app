@@ -4,8 +4,7 @@ import {
   BoardRow,
   BoardSquare,
   Letter,
-  NumberDivVert,
-  Number,
+  LetterSquare,
 } from "../styles/BoardStyles";
 import Bishop from "./Bishop";
 import King from "./King";
@@ -17,18 +16,11 @@ import Rook from "./Rook";
 const Board = () => {
   return (
     <>
-      <NumberDivVert>
-        <Number marginTop="2">8</Number>
-        <Number marginTop="4.5">7</Number>
-        <Number marginTop="4">6</Number>
-        <Number marginTop="4.5">5</Number>
-        <Number marginTop="4.5">4</Number>
-        <Number marginTop="4">3</Number>
-        <Number marginTop="4">2</Number>
-        <Number marginTop="4">1</Number>
-      </NumberDivVert>
       <BoardContainer>
         <BoardRow>
+          <LetterSquare>
+            <Letter>8</Letter>
+          </LetterSquare>
           <BoardSquare id="a8" bgcolor="white">
             <Rook rookColor="black" borderColor="rgb(200,200,200)" />
           </BoardSquare>
@@ -69,6 +61,9 @@ const Board = () => {
           </BoardSquare>
         </BoardRow>
         <BoardRow>
+          <LetterSquare>
+            <Letter>7</Letter>
+          </LetterSquare>
           <BoardSquare id="a7" bgcolor="rgb(75,75,75)">
             <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
           </BoardSquare>
@@ -95,6 +90,9 @@ const Board = () => {
           </BoardSquare>
         </BoardRow>
         <BoardRow>
+          <LetterSquare>
+            <Letter>6</Letter>
+          </LetterSquare>
           <BoardSquare id="a6" bgcolor="white" />
           <BoardSquare id="b6" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="c6" bgcolor="white" />
@@ -105,6 +103,9 @@ const Board = () => {
           <BoardSquare id="h6" bgcolor="rgb(75,75,75)" />
         </BoardRow>
         <BoardRow>
+          <LetterSquare>
+            <Letter>5</Letter>
+          </LetterSquare>
           <BoardSquare id="a5" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="b5" bgcolor="white" />
           <BoardSquare id="c5" bgcolor="rgb(75,75,75)" />
@@ -115,6 +116,9 @@ const Board = () => {
           <BoardSquare id="h5" bgcolor="white" />
         </BoardRow>
         <BoardRow>
+          <LetterSquare>
+            <Letter>4</Letter>
+          </LetterSquare>
           <BoardSquare id="a4" bgcolor="white" />
           <BoardSquare id="b4" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="c4" bgcolor="white" />
@@ -125,6 +129,9 @@ const Board = () => {
           <BoardSquare id="h4" bgcolor="rgb(75,75,75)" />
         </BoardRow>
         <BoardRow>
+          <LetterSquare>
+            <Letter>3</Letter>
+          </LetterSquare>
           <BoardSquare id="a3" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="b3" bgcolor="white" />
           <BoardSquare id="c3" bgcolor="rgb(75,75,75)" />
@@ -135,6 +142,9 @@ const Board = () => {
           <BoardSquare id="h3" bgcolor="white" />
         </BoardRow>
         <BoardRow>
+          <LetterSquare>
+            <Letter>2</Letter>
+          </LetterSquare>
           <BoardSquare id="a2" bgcolor="white">
             <Pawn pawnColor="rgb(180,180,180)" stripeColor="black" />
           </BoardSquare>
@@ -161,6 +171,9 @@ const Board = () => {
           </BoardSquare>
         </BoardRow>
         <BoardRow>
+          <LetterSquare>
+            <Letter>1</Letter>
+          </LetterSquare>
           <BoardSquare id="a1" bgcolor="rgb(75,75,75)">
             <Rook rookColor="rgb(180,180,180)" borderColor="black" />
           </BoardSquare>
@@ -213,14 +226,31 @@ const Board = () => {
           </BoardSquare>
         </BoardRow>
         <BoardRow>
-          <Letter marginLeft="3">A</Letter>
-          <Letter marginLeft="5">B</Letter>
-          <Letter marginLeft="5.5">C</Letter>
-          <Letter marginLeft="5.5">D</Letter>
-          <Letter marginLeft="5">E</Letter>
-          <Letter marginLeft="6">F</Letter>
-          <Letter marginLeft="5">G</Letter>
-          <Letter marginLeft="5.5">H</Letter>
+          <LetterSquare />
+          <LetterSquare>
+            <Letter>A</Letter>
+          </LetterSquare>
+          <LetterSquare>
+            <Letter>B</Letter>
+          </LetterSquare>
+          <LetterSquare>
+            <Letter>C</Letter>
+          </LetterSquare>
+          <LetterSquare>
+            <Letter>D</Letter>
+          </LetterSquare>
+          <LetterSquare>
+            <Letter>E</Letter>
+          </LetterSquare>
+          <LetterSquare>
+            <Letter>F</Letter>
+          </LetterSquare>
+          <LetterSquare>
+            <Letter>G</Letter>
+          </LetterSquare>
+          <LetterSquare>
+            <Letter>H</Letter>
+          </LetterSquare>
         </BoardRow>
       </BoardContainer>
     </>

@@ -8,7 +8,7 @@ export const PawnHead = styled.div`
   height: calc(0.5rem + 1vw);
   width: calc(0.5rem + 1vw);
   margin-left: 0;
-  margin-top: calc(0.25rem + 0.75vw);
+  margin-top: calc(-0.25rem - 0.25vw);
 `;
 export const PawnBody = styled.div`
   position: absolute;
@@ -20,7 +20,7 @@ export const PawnBody = styled.div`
   height: calc(1rem + 1vw);
   width: calc(1rem + 1vw);
   margin-left: 0;
-  margin-top: calc(1rem + 1.25vw);
+  margin-top: calc(0.5rem + 0.1vw);
 `;
 export const PawnBottom = styled.div`
   position: absolute;
@@ -33,7 +33,7 @@ export const PawnBottom = styled.div`
   width: calc(2rem + 1vw);
   border-radius: 3rem 3rem 0 0;
   margin-left: calc(2.25rem + 1vw);
-  margin-top: calc(3.25rem + 1vw);
+  margin-top: calc(2rem + 1vw);
 `;
 export const PawnStripe = styled.div`
   position: absolute;
@@ -42,7 +42,7 @@ export const PawnStripe = styled.div`
   border-radius: 10%;
   border: 1px solid ${(props) => props.bgcolor || "red"};
   margin-left: 0;
-  margin-top: calc(3rem + 1.5vw);
+  margin-top: calc(2rem + 1.5vw);
 `;
 export const PawnStripe2 = styled.div`
   position: absolute;
@@ -51,7 +51,7 @@ export const PawnStripe2 = styled.div`
   border-radius: 10%;
   border: 1px solid ${(props) => props.bgcolor || "red"};
   margin-left: 0;
-  margin-top: calc(3.5rem + 1.5vw);
+  margin-top: calc(2.5rem + 1.5vw);
 `;
 export const CenterChessPiece = styled.div`
   display: flex;
@@ -66,21 +66,21 @@ export const BishopHat = styled.div`
   border-top: 1px solid black;
   border-radius: 50%;
   background-color: ${(props) => props.bgcolor || "red"};
-  margin-top: calc(0.1rem + 0.2vw);
+  margin-top: calc(-0.25rem - 0.25vw);
 `;
 export const BishopTop = styled.div`
   position: absolute;
   border-left: calc(0.35rem + 1vw) solid transparent;
   border-right: calc(0.35rem + 1vw) solid transparent;
   border-bottom: 1.5rem solid ${(props) => props.bgcolor || "red"};
-  margin-top: calc(0.25rem + 0.5vw);
+  margin-top: 0;
 `;
 export const BishopTopBehind = styled.div`
   position: absolute;
   border-left: calc(0.7rem + 0.5vw) solid transparent;
   border-right: calc(0.7rem + 0.5vw) solid transparent;
   border-bottom: 1.5rem solid ${(props) => props.borderColor || "red"};
-  margin-top: calc(0.1rem + 0.5vw);
+  margin-top: calc(-0.1rem - 0.1vw);
 `;
 export const BishopBody = styled.div`
   position: absolute;
@@ -91,7 +91,7 @@ export const BishopBody = styled.div`
   border-right: 1px solid black;
   border-radius: 50%;
   margin-left: 0;
-  margin-top: calc(0.6rem + 1vw);
+  margin-top: calc(0.5rem + 0.25vw);
 `;
 export const BishopCross1 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
@@ -100,7 +100,7 @@ export const BishopCross1 = styled.div`
   height: calc(1rem + 0.5vw);
   border-radius: 10%;
   margin-left: 0;
-  margin-top: calc(0.5rem + 0.5vw);
+  margin-top: calc(0.25rem + 0.25vw);
 `;
 export const BishopCross2 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
@@ -109,7 +109,7 @@ export const BishopCross2 = styled.div`
   border: 1px solid ${(props) => props.bgcolor || "red"};
   border-radius: 10%;
   margin-left: 0;
-  margin-top: calc(1rem + 0.5vw);
+  margin-top: calc(0.75rem + 0.25vw);
 `;
 export const BishopBottom = styled.div`
   position: absolute;
@@ -121,7 +121,7 @@ export const BishopBottom = styled.div`
   border-bottom: 1px solid black;
   border-radius: 50%;
   margin-left: 0;
-  margin-top: calc(2.25rem + 1vw);
+  margin-top: calc(2rem + 0.5vw);
 `;
 export const BishopStripeTop = styled.div`
   position: absolute;
@@ -130,7 +130,7 @@ export const BishopStripeTop = styled.div`
   width: calc(0.25rem + 1vw);
   border-radius: 10%;
   margin-left: 0;
-  margin-top: calc(2.25rem + 1.2vw);
+  margin-top: calc(2rem + 0.75vw);
 `;
 export const BishopStripeBottom = styled.div`
   position: absolute;
@@ -139,7 +139,7 @@ export const BishopStripeBottom = styled.div`
   border-radius: 10%;
   border: 1px solid ${(props) => props.bgcolor || "red"};
   margin-left: 0;
-  margin-top: calc(2.5rem + 1.2vw);
+  margin-top: calc(2.25rem + 0.75vw);
 `;
 export const BishopRobesLeft = styled.div`
   position: absolute;
@@ -151,7 +151,7 @@ export const BishopRobesLeft = styled.div`
   transform: skew(-10deg);
   transform: rotate(-10deg);
   margin-left: calc(-1rem - 1vw);
-  margin-top: calc(3rem + 1.5vw);
+  margin-top: calc(2.5rem + 1.25vw);
 `;
 export const BishopRobesRight = styled.div`
   position: absolute;
@@ -163,7 +163,7 @@ export const BishopRobesRight = styled.div`
   transform: skew(10deg);
   transform: rotate(10deg);
   margin-left: calc(1rem + 1vw);
-  margin-top: calc(3rem + 1.5vw);
+  margin-top: calc(2.5rem + 1.25vw);
 `;
 export const KingHeadLeft = styled.div`
   position: absolute;
@@ -176,7 +176,7 @@ export const KingHeadLeft = styled.div`
   border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: calc(-1.5rem - 1vw);
-  margin-top: calc(1rem + 1vw);
+  margin-top: calc(0.25rem + 0.5vw);
 `;
 export const KingHeadRight = styled.div`
   position: absolute;
@@ -189,7 +189,7 @@ export const KingHeadRight = styled.div`
   border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: calc(1.5rem + 1vw);
-  margin-top: calc(1rem + 1vw);
+  margin-top: calc(0.25rem + 0.5vw);
 `;
 export const KingHeadMiddle = styled.div`
   position: absolute;
@@ -201,7 +201,7 @@ export const KingHeadMiddle = styled.div`
   border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: 0;
-  margin-top: calc(0.75rem + 1vw);
+  margin-top: calc(0.25rem + 0.5vw);
 `;
 export const KingCross1 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
@@ -209,7 +209,7 @@ export const KingCross1 = styled.div`
   border: 1px solid ${(props) => props.bgcolor || "red"};
   height: calc(0.5rem + 1vw);
   border-radius: 10%;
-  margin-top: calc(0.2rem + 0.5vw);
+  margin-top: calc(-0.1rem - 0.1vw);
 `;
 export const KingCross2 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
@@ -218,7 +218,7 @@ export const KingCross2 = styled.div`
   border: 1px solid ${(props) => props.bgcolor || "red"};
   border-radius: 10%;
   margin-left: 0;
-  margin-top: calc(0.5rem + 0.5vw);
+  margin-top: calc(0.2rem + 0.1vw);
 `;
 export const KingBottom = styled.div`
   position: absolute;
@@ -230,7 +230,7 @@ export const KingBottom = styled.div`
   border-bottom: 1px solid black;
   border-radius: 50%;
   margin-left: 0;
-  margin-top: calc(3rem + 1.5vw);
+  margin-top: calc(2rem + 1.5vw);
 `;
 export const KingStripeTop = styled.div`
   position: absolute;
@@ -238,7 +238,7 @@ export const KingStripeTop = styled.div`
   border: 1px solid ${(props) => props.bgcolor || "red"};
   width: calc(1rem + 1vw);
   border-radius: 10%;
-  margin-top: calc(3rem + 1.5vw);
+  margin-top: calc(2rem + 1.5vw);
 `;
 export const KingStripeBottom = styled.div`
   position: absolute;
@@ -246,7 +246,7 @@ export const KingStripeBottom = styled.div`
   border: 1px solid ${(props) => props.bgcolor || "red"};
   width: calc(1.5rem + 1vw);
   border-radius: 10%;
-  margin-top: calc(3.3rem + 1.5vw);
+  margin-top: calc(2.25rem + 1.5vw);
 `;
 export const QueenFarLeftTriangle = styled.div`
   position: absolute;
@@ -254,8 +254,8 @@ export const QueenFarLeftTriangle = styled.div`
   border-right: calc(0.2rem + 0.5vw) solid transparent;
   transform: rotate(-18deg);
   border-bottom: calc(2.5rem + 1vw) solid ${(props) => props.bgcolor || "red"};
-  margin-left: calc(-3rem - 1vw);
-  margin-top: calc(0.5rem + 0.5vw);
+  margin-left: calc(-2.5rem - 1vw);
+  margin-top: calc(-0.2rem - 0.2vw);
 `;
 export const QueenFarLeftTriangleBehind = styled.div`
   position: absolute;
@@ -263,8 +263,8 @@ export const QueenFarLeftTriangleBehind = styled.div`
   border-right: calc(0.4rem + 0.5vw) solid transparent;
   transform: rotate(-18deg);
   border-bottom: calc(2.7rem + 1vw) solid ${(props) => props.borderColor || "red"};
-  margin-left: calc(-3.1rem - 1vw);
-  margin-top: calc(0.3rem + 0.5vw);
+  margin-left: calc(-2.5rem - 1vw);
+  margin-top: calc(-0.3rem - 0.3vw);
 `;
 export const QueenMiddleLeftTriangle = styled.div`
   position: absolute;
@@ -272,8 +272,8 @@ export const QueenMiddleLeftTriangle = styled.div`
   border-right: calc(0.2rem + 0.5vw) solid transparent;
   transform: rotate(-9deg);
   border-bottom: calc(2.5rem + 1vw) solid ${(props) => props.bgcolor || "red"};
-  margin-left: calc(-1.5rem - 1vw);
-  margin-top: calc(0.5rem + 0.5vw);
+  margin-left: calc(-1.25rem - 1vw);
+  margin-top: calc(-0.2rem - 0.2vw);
 `;
 export const QueenMiddleLeftTriangleBehind = styled.div`
   position: absolute;
@@ -281,8 +281,8 @@ export const QueenMiddleLeftTriangleBehind = styled.div`
   border-right: calc(0.4rem + 0.5vw) solid transparent;
   transform: rotate(-9deg);
   border-bottom: calc(2.7rem + 1vw) solid ${(props) => props.borderColor || "red"};
-  margin-left: calc(-1.5rem - 1vw);
-  margin-top: calc(0.3rem + 0.5vw);
+  margin-left: calc(-1.25rem - 1vw);
+  margin-top: calc(-0.3rem - 0.3vw);
 `;
 export const QueenFarRightTriangle = styled.div`
   position: absolute;
@@ -290,8 +290,8 @@ export const QueenFarRightTriangle = styled.div`
   border-right: calc(0.2rem + 0.5vw) solid transparent;
   transform: rotate(18deg);
   border-bottom: calc(2.5rem + 1vw) solid ${(props) => props.bgcolor || "red"};
-  margin-left: calc(3rem + 1vw);
-  margin-top: calc(0.5rem + 0.5vw);
+  margin-left: calc(2.5rem + 1vw);
+  margin-top: calc(-0.2rem - 0.2vw);
 `;
 export const QueenFarRightTriangleBehind = styled.div`
   position: absolute;
@@ -299,8 +299,8 @@ export const QueenFarRightTriangleBehind = styled.div`
   border-right: calc(0.4rem + 0.5vw) solid transparent;
   transform: rotate(18deg);
   border-bottom: calc(2.7rem + 1vw) solid ${(props) => props.borderColor || "red"};
-  margin-left: calc(3.1rem + 1vw);
-  margin-top: calc(0.3rem + 0.5vw);
+  margin-left: calc(2.5rem + 1vw);
+  margin-top: calc(-0.3rem - 0.3vw);
 `;
 export const QueenMiddleRightTriangle = styled.div`
   position: absolute;
@@ -308,8 +308,8 @@ export const QueenMiddleRightTriangle = styled.div`
   border-right: calc(0.2rem + 0.5vw) solid transparent;
   transform: rotate(9deg);
   border-bottom: calc(2.5rem + 1vw) solid ${(props) => props.bgcolor || "red"};
-  margin-left: calc(1.5rem + 1vw);
-  margin-top: calc(0.5rem + 0.5vw);
+  margin-left: calc(1.25rem + 1vw);
+  margin-top: calc(-0.2rem - 0.2vw);
 `;
 export const QueenMiddleRightTriangleBehind = styled.div`
   position: absolute;
@@ -317,31 +317,31 @@ export const QueenMiddleRightTriangleBehind = styled.div`
   border-right: calc(0.4rem + 0.5vw) solid transparent;
   transform: rotate(9deg);
   border-bottom: calc(2.7rem + 1vw) solid ${(props) => props.borderColor || "red"};
-  margin-left: calc(1.5rem + 1vw);
-  margin-top: calc(0.3rem + 0.5vw);
+  margin-left: calc(1.25rem + 1vw);
+  margin-top: calc(-0.3rem - 0.3vw);
 `;
 export const QueenMiddleTriangle = styled.div`
   position: absolute;
   border-left: calc(0.2rem + 0.5vw) solid transparent;
   border-right: calc(0.2rem + 0.5vw) solid transparent;
   border-bottom: calc(2.5rem + 1vw) solid ${(props) => props.bgcolor || "red"};
-  margin-top: calc(0.5rem + 0.5vw);
+  margin-top: calc(-0.2rem - 0.2vw);
 `;
 export const QueenMiddleTriangleBehind = styled.div`
   position: absolute;
   border-left: calc(0.4rem + 0.5vw) solid transparent;
   border-right: calc(0.4rem + 0.5vw) solid transparent;
   border-bottom: calc(2.7rem + 1vw) solid ${(props) => props.borderColor || "red"};
-  margin-top: calc(0.3rem + 0.5vw);
+  margin-top: calc(-0.3rem - 0.3vw);
 `;
 export const QueenBottom = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
   border: 1px solid ${(props) => props.borderColor || "red"};
-  height: calc(1rem + 0.5vw);
-  width: calc(3rem + 1.5vw);
+  height: calc(1rem + 1vw);
+  width: calc(2.5rem + 1.5vw);
   border-radius: 50%;
-  margin-top: calc(2.5rem + 1.5vw);
+  margin-top: calc(1.5rem + 1vw);
 `;
 export const QueenStripeBottom = styled.div`
   position: absolute;
@@ -349,7 +349,7 @@ export const QueenStripeBottom = styled.div`
   border: 1px solid ${(props) => props.bgcolor || "red"};
   width: calc(2rem + 1vw);
   border-radius: 10%;
-  margin-top: calc(3rem + 1.5vw);
+  margin-top: calc(2.1rem + 1vw);
 `;
 export const KnightBody = styled.div`
   position: absolute;
