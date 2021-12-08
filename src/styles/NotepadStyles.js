@@ -24,6 +24,7 @@ export const NotePadNavBar = styled.div`
   display: flex;
   justify-content: space-around;
   height: calc(2rem + 1vw);
+  margin-bottom: calc(1rem + 1vw);
 `;
 export const NotepadNavButton = styled.div`
   display: flex;

@@ -19,4 +19,6 @@ export const NavBarButton = styled(Link)`
   margin-left: calc(2rem + 1vw);
   padding-left: calc(1.5rem + 1vw);
   padding-right: calc(1.5rem + 1vw);
+  text-decoration: none;
+  border-radius: 15%;
 `;
