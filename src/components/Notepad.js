@@ -11,7 +11,7 @@ import {
   PlayButton,
 } from "../styles/NotepadStyles";
 
-const Notepad = ({ content, listMoves, moveCounter }) => {
+const Notepad = ({ content, listMoves1, listMoves2, moveCounter }) => {
   const handlePlayClick = (e) => {
     e.preventDefault();
     Swal.fire({
@@ -44,14 +44,20 @@ const Notepad = ({ content, listMoves, moveCounter }) => {
           </Link>
         </NotePadNavBar>
         <NotepadDiv>{content ? content : <></>}</NotepadDiv>
-        <NotepadDiv>
+        <div>
           <ul>
             <li style={{ listStyleType: "none" }}>
               {moveCounter ? moveCounter : <></>}{" "}
-              {listMoves ? listMoves : <></>}
+              {listMoves1 ? listMoves1 : <></>}
             </li>
           </ul>
-        </NotepadDiv>
+          <ul>
+            <li style={{ listStyleType: "none" }}>
+              {moveCounter ? Number(moveCounter) + 1 : <></>}{" "}
+              {listMoves2 ? listMoves2 : <></>}
+            </li>
+          </ul>
+        </div>
       </MoveNotepad>
       <PlayButton onClick={handlePlayClick}>Play</PlayButton>
       <GithubButton>
