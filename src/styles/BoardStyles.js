@@ -1,10 +1,12 @@
 import styled from "styled-components";
-
+export const RootDiv = styled.div`
+  display: block;
+`
 export const BoardContainer = styled.div`
-  position: absolute;
+  position: relative;
+  display: block;
   width: 100vmax;
   height: 100vmax;
-  padding-top: calc(1rem + 1vw);
 `;
 export const BoardRow = styled.div`
   display: flex;

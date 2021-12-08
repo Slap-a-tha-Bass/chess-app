@@ -9,7 +9,7 @@ import {
   NotepadNavButton,
   NotepadTitle,
   PlayButton,
-} from "../styles/BackgroundLayout";
+} from "../styles/NotepadStyles";
 
 const Notepad = ({ content, listMoves, moveCounter }) => {
   const handlePlayClick = (e) => {
@@ -53,21 +53,17 @@ const Notepad = ({ content, listMoves, moveCounter }) => {
           </ul>
         </NotepadDiv>
       </MoveNotepad>
-      <NotepadDiv>
-        <PlayButton onClick={handlePlayClick}>Play</PlayButton>
-      </NotepadDiv>
-      <NotepadDiv>
-        <GithubButton>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            style={{ textDecoration: "none", color: "whitesmoke" }}
-            href="https://github.com/Slap-a-tha-Bass/chess-app"
-          >
-            Github Repo
-          </a>
-        </GithubButton>
-      </NotepadDiv>
+      <PlayButton onClick={handlePlayClick}>Play</PlayButton>
+      <GithubButton>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none", color: "whitesmoke" }}
+          href="https://github.com/Slap-a-tha-Bass/chess-app"
+        >
+          Github Repo
+        </a>
+      </GithubButton>
     </>
   );
 };

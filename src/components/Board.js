@@ -70,9 +70,7 @@ const Board = () => {
           <BoardSquare id="b7" bgcolor="white">
             <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
           </BoardSquare>
-          <BoardSquare id="c7" bgcolor="rgb(75,75,75)">
-            <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
-          </BoardSquare>
+          <BoardSquare id="c7" bgcolor="rgb(75,75,75)"></BoardSquare>
           <BoardSquare id="d7" bgcolor="white">
             <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
           </BoardSquare>
@@ -82,9 +80,7 @@ const Board = () => {
           <BoardSquare id="f7" bgcolor="white">
             <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
           </BoardSquare>
-          <BoardSquare id="g7" bgcolor="rgb(75,75,75)">
-            <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
-          </BoardSquare>
+          <BoardSquare id="g7" bgcolor="rgb(75,75,75)"></BoardSquare>
           <BoardSquare id="h7" bgcolor="white">
             <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
           </BoardSquare>
@@ -99,7 +95,9 @@ const Board = () => {
           <BoardSquare id="d6" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="e6" bgcolor="white" />
           <BoardSquare id="f6" bgcolor="rgb(75,75,75)" />
-          <BoardSquare id="g6" bgcolor="white" />
+          <BoardSquare id="g6" bgcolor="white">
+            <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
+          </BoardSquare>
           <BoardSquare id="h6" bgcolor="rgb(75,75,75)" />
         </BoardRow>
         <BoardRow>
@@ -108,7 +106,9 @@ const Board = () => {
           </LetterSquare>
           <BoardSquare id="a5" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="b5" bgcolor="white" />
-          <BoardSquare id="c5" bgcolor="rgb(75,75,75)" />
+          <BoardSquare id="c5" bgcolor="rgb(75,75,75)">
+            <Pawn pawnColor="black" stripeColor="rgb(200,200,200)" />
+          </BoardSquare>
           <BoardSquare id="d5" bgcolor="white" />
           <BoardSquare id="e5" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="f5" bgcolor="white" />
@@ -123,7 +123,9 @@ const Board = () => {
           <BoardSquare id="b4" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="c4" bgcolor="white" />
           <BoardSquare id="d4" bgcolor="rgb(75,75,75)" />
-          <BoardSquare id="e4" bgcolor="white" />
+          <BoardSquare id="e4" bgcolor="white">
+            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black" />
+          </BoardSquare>
           <BoardSquare id="f4" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="g4" bgcolor="white" />
           <BoardSquare id="h4" bgcolor="rgb(75,75,75)" />
@@ -137,7 +139,13 @@ const Board = () => {
           <BoardSquare id="c3" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="d3" bgcolor="white" />
           <BoardSquare id="e3" bgcolor="rgb(75,75,75)" />
-          <BoardSquare id="f3" bgcolor="white" />
+          <BoardSquare id="f3" bgcolor="white">
+            <Knight
+              knightColor="rgb(180,180,180)"
+              faceColor="black"
+              stripeColor="black"
+            />
+          </BoardSquare>
           <BoardSquare id="g3" bgcolor="rgb(75,75,75)" />
           <BoardSquare id="h3" bgcolor="white" />
         </BoardRow>
@@ -157,9 +165,7 @@ const Board = () => {
           <BoardSquare id="d2" bgcolor="rgb(75,75,75)">
             <Pawn pawnColor="rgb(180,180,180)" stripeColor="black" />
           </BoardSquare>
-          <BoardSquare id="e2" bgcolor="white">
-            <Pawn pawnColor="rgb(180,180,180)" stripeColor="black" />
-          </BoardSquare>
+          <BoardSquare id="e2" bgcolor="white"></BoardSquare>
           <BoardSquare id="f2" bgcolor="rgb(75,75,75)">
             <Pawn pawnColor="rgb(180,180,180)" stripeColor="black" />
           </BoardSquare>
@@ -214,13 +220,7 @@ const Board = () => {
               borderColor="black"
             />
           </BoardSquare>
-          <BoardSquare id="g1" bgcolor="rgb(75,75,75)">
-            <Knight
-              knightColor="rgb(180,180,180)"
-              faceColor="black"
-              stripeColor="black"
-            />
-          </BoardSquare>
+          <BoardSquare id="g1" bgcolor="rgb(75,75,75)"></BoardSquare>
           <BoardSquare id="h1" bgcolor="white">
             <Rook rookColor="rgb(180,180,180)" borderColor="black" />
           </BoardSquare>
