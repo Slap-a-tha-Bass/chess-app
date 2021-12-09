@@ -460,8 +460,8 @@ export const RookBottom = styled.div`
   border-right: calc(0.25rem + 0.5vw) solid transparent;
   border-bottom: calc(1rem + 0.5vw) solid ${(props) => props.bgcolor || "red"};
   border-radius: 15%;
-  margin-left: 0;
-  margin-top: calc(1.7rem + 1vw);
+  margin-left: calc(0.25rem + 0.25vw);
+  margin-top: calc(1.7rem + 1.5vw);
 `;
 export const RookBottomBehind = styled.div`
   position: absolute;
@@ -471,8 +471,8 @@ export const RookBottomBehind = styled.div`
   border-bottom: calc(1.25rem + 0.25vw) solid
     ${(props) => props.borderColor || "red"};
   border-radius: 15%;
-  margin-left: 0;
-  margin-top: calc(1.6rem + 1vw);
+  margin-left: calc(0.05rem + 0.3vw);
+  margin-top: calc(1.8rem + 1.5vw);
 `;
 export const RookMiddle = styled.div`
   position: absolute;
@@ -482,8 +482,8 @@ export const RookMiddle = styled.div`
   border-radius: 20%;
   border-radius: 25%;
   border: 1px solid ${(props) => props.borderColor || "red"};
-  margin-left: 0;
-  margin-top: 0;
+  margin-left: calc(0.5rem + 0.75vw);
+  margin-top: calc(0.5rem + 0.5vw);
 `;
 export const RookTop = styled.div`
   position: absolute;
@@ -492,7 +492,7 @@ export const RookTop = styled.div`
   border-right: calc(0.25rem + 0.5vw) solid transparent;
   border-top: calc(1rem + 0.5vw) solid ${(props) => props.bgcolor || "red"};
   border-radius: 15%;
-  margin-left: 0;
+  margin-left: calc(0.25rem + 0.25vw);
   margin-top: calc(-0.1rem - 0.1vw);
 `;
 export const RookTopBehind = styled.div`
@@ -503,6 +503,6 @@ export const RookTopBehind = styled.div`
   border-top: calc(1.25rem + 0.5vw) solid
     ${(props) => props.borderColor || "red"};
   border-radius: 15%;
-  margin-left: 0;
+  margin-left: calc(0.05rem + 0.3vw);
   margin-top: calc(-0.2rem - 0.1vw);
 `;
