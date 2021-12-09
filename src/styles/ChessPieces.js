@@ -66,33 +66,33 @@ export const BishopHat = styled.div`
   border-radius: 50%;
   background-color: ${(props) => props.bgcolor || "red"};
   margin-top: calc(-0.25rem - 0.25vw);
-  margin-left: calc(1rem + 0.75vw);
+  margin-left: calc(1rem + 0.8vw);
 `;
 export const BishopTop = styled.div`
   position: absolute;
-  border-left: calc(0.35rem + 1vw) solid transparent;
-  border-right: calc(0.35rem + 1vw) solid transparent;
+  border-left: calc(0.3rem + 1vw) solid transparent;
+  border-right: calc(0.3rem + 1vw) solid transparent;
   border-bottom: 1.5rem solid ${(props) => props.bgcolor || "red"};
-  margin-left: calc(0.8rem + 0.1vw);
+  margin-left: calc(0.85rem + 0.1vw);
   margin-top: 0;
 `;
 export const BishopTopBehind = styled.div`
   position: absolute;
-  border-left: calc(0.7rem + 0.5vw) solid transparent;
-  border-right: calc(0.7rem + 0.5vw) solid transparent;
+  border-left: calc(0.6rem + 0.5vw) solid transparent;
+  border-right: calc(0.6rem + 0.5vw) solid transparent;
   border-bottom: 1.5rem solid ${(props) => props.borderColor || "red"};
-  margin-left: calc(0.5rem + 0.5vw);
+  margin-left: calc(0.55rem + 0.6vw);
   margin-top: calc(-0.1rem - 0.1vw);
 `;
 export const BishopBody = styled.div`
   position: absolute;
   background-color: ${(props) => props.bgcolor || "red"};
-  height: calc(1.5rem + 1.5vw);
-  width: calc(1.5rem + 1.5vw);
+  height: calc(1.5rem + 1vw);
+  width: calc(1.5rem + 1vw);
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-radius: 50%;
-  margin-left: calc(0.35rem + 0.25vw);
+  margin-left: calc(0.4rem + 0.5vw);
   margin-top: calc(0.5rem + 0.25vw);
 `;
 export const BishopCross1 = styled.div`
@@ -101,7 +101,7 @@ export const BishopCross1 = styled.div`
   border: 1px solid ${(props) => props.bgcolor || "red"};
   height: calc(1rem + 0.5vw);
   border-radius: 10%;
-  margin-left: calc(1.2rem + 0.75vw);
+  margin-left: calc(1.1rem + 1vw);
   margin-top: calc(0.25rem + 0.25vw);
 `;
 export const BishopCross2 = styled.div`
@@ -110,7 +110,7 @@ export const BishopCross2 = styled.div`
   width: calc(0.5rem + 0.5vw);
   border: 1px solid ${(props) => props.bgcolor || "red"};
   border-radius: 10%;
-  margin-left: calc(0.75rem + 0.75vw);
+  margin-left: calc(0.7rem + 0.9vw);
   margin-top: calc(0.75rem + 0.25vw);
 `;
 export const BishopBottom = styled.div`
@@ -122,7 +122,7 @@ export const BishopBottom = styled.div`
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 50%;
-  margin-left: calc(0.55rem + 0.25vw);
+  margin-left: calc(0.6rem + 0.25vw);
   margin-top: calc(2rem + 0.5vw);
 `;
 export const BishopStripeTop = styled.div`
@@ -178,7 +178,7 @@ export const KingHeadLeft = styled.div`
   border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: calc(-0.25rem - 0.5vw);
-  margin-top: calc(0.25rem + 0.5vw);
+  margin-top: calc(0.1rem + 0.5vw);
 `;
 export const KingHeadRight = styled.div`
   position: absolute;
@@ -191,7 +191,7 @@ export const KingHeadRight = styled.div`
   border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: calc(1rem + 1vw);
-  margin-top: calc(0.25rem + 0.5vw);
+  margin-top: calc(0.1rem + 0.5vw);
 `;
 export const KingHeadMiddle = styled.div`
   position: absolute;
@@ -203,7 +203,7 @@ export const KingHeadMiddle = styled.div`
   border-bottom: 1px solid ${(props) => props.borderColor || "red"};
   border-radius: 50%;
   margin-left: calc(0.6rem + 0.5vw);
-  margin-top: calc(0.25rem + 0.5vw);
+  margin-top: calc(0.1rem + 0.5vw);
 `;
 export const KingCross1 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
@@ -212,7 +212,7 @@ export const KingCross1 = styled.div`
   height: calc(0.5rem + 1vw);
   border-radius: 10%;
   margin-left: calc(1rem + 1vw);
-  margin-top: calc(-0.1rem - 0.1vw);
+  margin-top: calc(-0.2rem - 0.1vw);
 `;
 export const KingCross2 = styled.div`
   background-color: ${(props) => props.bgcolor || "red"};
@@ -221,7 +221,7 @@ export const KingCross2 = styled.div`
   border: 1px solid ${(props) => props.bgcolor || "red"};
   border-radius: 10%;
   margin-left: calc(0.85rem + 0.5vw);
-  margin-top: calc(0.1rem + 0.1vw);
+  margin-top: calc(0rem + 0.1vw);
 `;
 export const KingBottom = styled.div`
   position: absolute;
@@ -233,7 +233,7 @@ export const KingBottom = styled.div`
   border-bottom: 1px solid black;
   border-radius: 50%;
   margin-left: calc(0.05rem + 0.25vw);
-  margin-top: calc(2rem + 1.5vw);
+  margin-top: calc(1.75rem + 1.5vw);
 `;
 export const KingStripeTop = styled.div`
   position: absolute;
@@ -354,7 +354,7 @@ export const QueenBottom = styled.div`
   width: calc(2.75rem + 1.5vw);
   border-radius: 50%;
   margin-top: calc(1.75rem + 0.5vw);
-  margin-left: calc(-0.05rem - 0.1vw);
+  margin-left: calc(-0.1rem - 0.1vw);
 `;
 export const QueenStripeBottom = styled.div`
   position: absolute;
@@ -363,7 +363,7 @@ export const QueenStripeBottom = styled.div`
   width: calc(2rem + 1vw);
   border-radius: 10%;
   margin-top: calc(2.2rem + 1vw);
-  margin-left: calc(0.2rem + 0.5vw);
+  margin-left: calc(0.1rem + 0.25vw);
 `;
 export const KnightBody = styled.div`
   position: absolute;
@@ -372,7 +372,7 @@ export const KnightBody = styled.div`
   height: calc(1rem + 1vw);
   width: calc(1.5rem + 1vw);
   border-radius: 3rem 3rem 0 0;
-  margin-left: calc(1.5rem + 1.5vw);
+  margin-left: calc(1.25rem + 0.75vw);
   margin-top: calc(2.25rem + 1vw);
 `;
 export const KnightBottom = styled.div`
@@ -391,7 +391,7 @@ export const KnightBack = styled.div`
   height: calc(3rem + 1vw);
   width: calc(1.25rem + 1vw);
   border-radius: 0 3rem 1rem 0;
-  margin-left: calc(2.5rem + 1vw);
+  margin-left: calc(1.75rem + 0.75vw);
   margin-top: calc(1.3rem + 0.5vw);
 `;
 export const KnightHead = styled.div`
@@ -401,7 +401,7 @@ export const KnightHead = styled.div`
   width: calc(1.2rem + 1vw);
   transform: rotate(40deg);
   border-radius: 50%;
-  margin-left: calc(-1.4rem - 0.5vw);
+  margin-left: calc(-0.05rem - 0.1vw);
   margin-top: calc(-0.25rem - 0.25vw);
 `;
 export const KnightEyes = styled.div`
@@ -411,8 +411,8 @@ export const KnightEyes = styled.div`
   width: calc(0.5rem + 0.25vw);
   border-radius: 50%;
   transform: rotate(-45deg);
-  margin-left: calc(-1.5rem - 1vw);
-  margin-top: calc(0.5rem + 0.5vw);
+  margin-left: calc(0.25rem + 0.25vw);
+  margin-top: calc(0.35rem + 0.35vw);
 `;
 export const KnightNose = styled.div`
   position: absolute;
@@ -420,8 +420,8 @@ export const KnightNose = styled.div`
   height: calc(0.2rem + 0.2vw);
   width: calc(0.2rem + 0.2vw);
   border-radius: 50%;
-  margin-left: calc(-2.75rem - 1vw);
-  margin-top: calc(1.25rem + 1vw);
+  margin-left: 0;
+  margin-top: calc(1.25rem + 0.5vw);
 `;
 export const KnightEarRight = styled.div`
   position: absolute;
@@ -430,7 +430,7 @@ export const KnightEarRight = styled.div`
   width: calc(0.5rem + 0.25vw);
   border-radius: 50%;
   transform: rotate(-45deg);
-  margin-left: calc(-0.25rem - 0.5vw);
+  margin-left: calc(1rem + 0.25vw);
   margin-top: calc(-0.25rem - 0.25vw);
 `;
 export const KnightBackStripe = styled.div`
